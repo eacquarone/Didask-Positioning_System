@@ -1,0 +1,36 @@
+digraph G {
+p_theta4 [shape=invtriangle];
+Theta_2;
+Theta_2 -> p_theta4  [label=Theta_C];
+p_theta2 [shape=invtriangle];
+p_theta2 -> Theta_2  [label=p];
+Theta_1;
+Theta_1 -> p_theta2  [label=Theta_C];
+Theta_3;
+Theta_3 -> p_theta4  [label=Theta_C];
+p_theta3 [shape=invtriangle];
+p_theta3 -> Theta_3  [label=p];
+Theta_1 -> p_theta3  [label=Theta_C];
+U_3_1;
+p_3_1 [shape=invtriangle];
+p_3_1 -> U_3_1  [label=p];
+Theta_3 -> p_3_1  [label=Theta];
+U_2_1 [style=filled];
+p_2_1 [shape=invtriangle];
+p_2_1 -> U_2_1  [label=p];
+Theta_2 -> p_2_1  [label=Theta];
+p_1_1 [shape=invtriangle];
+Theta_1 -> p_1_1  [label=Theta];
+p_4_1 [shape=invtriangle];
+Theta_4;
+Theta_4 -> p_4_1  [label=Theta];
+p_theta4 -> Theta_4  [label=p];
+p_1_2 [shape=invtriangle];
+Theta_1 -> p_1_2  [label=Theta];
+U_4_1;
+p_4_1 -> U_4_1  [label=p];
+U_1_2 [style=filled];
+p_1_2 -> U_1_2  [label=p];
+U_1_1;
+p_1_1 -> U_1_1  [label=p];
+}
